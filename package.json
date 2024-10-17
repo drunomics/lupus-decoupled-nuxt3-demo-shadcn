@@ -11,10 +11,14 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.5.5",
+    "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.13.1",
+    "shadcn-nuxt": "^0.10.4",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "lucide-vue-next": "^0.453.0",
     "nuxtjs-drupal-ce": "^2.1.0"
   }
 }
