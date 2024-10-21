@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavigationMain />
+    <NavigationHeader />
     <SiteMessages />
     <div id="main">
       <slot />

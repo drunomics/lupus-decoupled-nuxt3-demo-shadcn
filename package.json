@@ -10,7 +10,9 @@
     "lint-fix": "eslint . --fix"
   },
   "devDependencies": {
+    "@iconify-json/lucide": "^1.2.10",
     "@nuxt/eslint": "^0.5.5",
+    "@nuxt/icon": "^1.5.6",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@tailwindcss/typography": "^0.5.15",
     "nuxt": "^3.13.1",
@@ -19,7 +21,10 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
     "lucide-vue-next": "^0.453.0",
-    "nuxtjs-drupal-ce": "^2.1.0"
+    "nuxtjs-drupal-ce": "^2.1.0",
+    "radix-vue": "^1.9.7",
+    "tailwind-merge": "^2.5.4"
   }
 }
