@@ -1,5 +1,5 @@
 <template>
-  <UiBreadcrumb class="mt-5">
+  <UiBreadcrumb class="mt-5 mb-2">
     <UiBreadcrumbList>
       <template v-for="(breadcrumb, index) in page.breadcrumbs" :key="index">
         <UiBreadcrumbItem>
