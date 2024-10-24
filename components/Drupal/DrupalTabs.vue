@@ -1,6 +1,6 @@
 <template>
   <div class="drupal-tabs my-2">
-    <ul v-if="tabs.primary" class="flex">
+    <ul v-if="tabs.primary" class="flex flex-wrap">
       <li v-for="tab in tabs.primary" :key="tab.url">
         <UiButton variant="link" size="sm" as-child>
           <nuxt-link
