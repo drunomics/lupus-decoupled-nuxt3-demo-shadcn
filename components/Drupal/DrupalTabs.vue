@@ -5,7 +5,6 @@
         <UiButton variant="link" size="sm" as-child>
           <nuxt-link
             :href="tab.url"
-            tabindex="-1"
             :class="{ 'is-active': tab.active }"
           >
             {{ tab.label }}
