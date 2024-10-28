@@ -16,15 +16,22 @@
         <ul class="flex flex-col gap-1 pb-4">
           <li v-for="menuItem in mainMenu" :key="menuItem.key">
             <NuxtLink
-              v-slot="{ isActive }"
-              :to="menuItem.external ? menuItem.absolute : `/${menuItem.alias}`"
+              v-slot="slot"
+              :to="menuItem.relative"
               :external="menuItem.external"
+              :target="menuItem.external ? '_blank' : null"
             >
               <div
-                class="flex h-8 items-center gap-2 rounded-md p-2 m-[2px] text-sm text-foreground/80 hover:bg-muted hover:text-primary"
-                :class="[isActive && 'bg-muted !text-primary']"
+                class="flex h-8 items-center gap-0.5 rounded-md p-2 m-[2px] text-sm text-foreground/80 hover:bg-muted hover:text-primary"
+                :class="[slot?.isActive && 'bg-muted !text-primary']"
               >
                 {{ menuItem.title }}
+                <Icon
+                  v-if="menuItem.external"
+                  name="lucide:arrow-up-right"
+                  class="text-muted-foreground -mt-2"
+                  size="13"
+                />
               </div>
             </NuxtLink>
           </li>

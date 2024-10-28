@@ -3,9 +3,10 @@
     <UiNavigationMenuList>
       <UiNavigationMenuItem v-for="menuItem in mainMenu" :key="menuItem.key" class="relative">
         <NuxtLink
-          v-slot="{ isActive }"
-          :to="menuItem.external ? menuItem.absolute : `/${menuItem.alias}`"
+          v-slot="slot"
+          :to="menuItem.relative"
           :external="menuItem.external"
+          :target="menuItem.external ? '_blank' : null"
         >
           <Icon
             v-if="menuItem.external"
@@ -14,7 +15,8 @@
             size="13"
           />
           <UiNavigationMenuLink
-            :active="isActive"
+            :active="slot?.isActive"
+            as="span"
             class="bg-transparent pr-6 font-semibold"
             :class="navigationMenuTriggerStyle()"
           >
