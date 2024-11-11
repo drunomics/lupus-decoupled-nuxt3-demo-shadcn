@@ -7,6 +7,7 @@
         </UiButton>
       </div>
     </div>
+    <NavigationFooterAccount />
   </footer>
 </template>
 
