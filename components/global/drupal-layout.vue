@@ -2,8 +2,8 @@
   <div
     class="layout-section"
   >
-    <div v-if="content">
-      <component :is="renderCustomElements(content)" />
+    <div v-for="element in content">
+      <component :is="renderCustomElements(element)" />
     </div>
     <div v-if="first">
       <component :is="renderCustomElements(first)" />
