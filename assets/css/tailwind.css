@@ -78,8 +78,8 @@
 }
 
 .visually-hidden {
-   @apply hidden;
- }
+  @apply sr-only;
+}
 
 .align-right {
   @apply float-right ml-4;
