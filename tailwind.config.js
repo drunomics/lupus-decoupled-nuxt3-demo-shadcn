@@ -1,6 +1,6 @@
 const animate = require('tailwindcss-animate')
 const typography = require('@tailwindcss/typography')
-
+const forms = require('@tailwindcss/forms')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
@@ -83,5 +83,5 @@ module.exports = {
       },
     },
   },
-  plugins: [animate, typography],
+  plugins: [animate, typography, forms],
 }
